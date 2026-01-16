@@ -52,7 +52,8 @@
         },
         
         typography: {
-            fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+            fontFamily: '"Anthropic Serif Web", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+            fontFamilySidebar: '"Anthropic Sans Web", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
             fontSize: {
                 xs: '0.75rem',
                 sm: '0.875rem',
@@ -217,6 +218,7 @@
                 --claude-radius-lg: ${CONFIG.borderRadius.lg};
                 --claude-radius-xl: ${CONFIG.borderRadius.xl};
                 --claude-font-family: ${CONFIG.typography.fontFamily};
+                --claude-font-family-sidebar: ${CONFIG.typography.fontFamily};
             }
             
             /* Dark Mode Variables */
@@ -246,7 +248,7 @@
             body {
                 background-color: var(--claude-main-bg) !important;
                 color: var(--claude-text-primary) !important;
-                font-family: var(--claude-font-family) !important;
+                font-family: var(--) !important;
                 --sidebar-color: var(--claude-sidebar-bg) !important;
                 --sidebar-menu-color: var(--claude-workspace-bg) !important;
                 --workspace-color: var(--claude-workspace-bg) !important;
@@ -392,7 +394,7 @@
                 background-color: transparent !important;
                 border: none !important;
                 color: var(--claude-text-primary) !important;
-                font-family: var(--claude-font-family) !important;
+                font-family: var(--claude-font-family-sidebar) !important;
                 border-radius: var(--claude-radius-md) !important;
             }
 
